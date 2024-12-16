@@ -10,7 +10,7 @@ export default function Overlay() {
             </TopLeftSide>
             <BottomRow>
                 <BottomLeftSide>
-                    <p>— In React & Threejs</p>
+                    <p>— In Threejs & React </p>
                 </BottomLeftSide>
                 <BottomRightSide>
                     <a
