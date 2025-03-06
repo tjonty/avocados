@@ -1,3 +1,4 @@
+import { trackEvent } from './lib/firebase';
 import { Container, TopLeftSide, BottomRow, BottomLeftSide, BottomRightSide } from './style/styles'
 
 export default function Overlay() {
@@ -16,6 +17,13 @@ export default function Overlay() {
                     <a
                         href="https://github.com/tjonty/avocados"
                         target="_blank"
+                        onClick={() => {
+                            trackEvent('button_click', {
+                                page_path: 'https://github.com/tjonty/avocados',
+                                page_title: "Code Page",
+                                page_location: '/code'
+                            });
+                        }}
                     >
                         code —
                     </a>
